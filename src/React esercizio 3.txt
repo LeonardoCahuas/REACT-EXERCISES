@@ -1,0 +1,3 @@
+What happens if the `name` variable is not passed to the function?
+
+It doesn't consider the content of the parentheses and leaves it blank
