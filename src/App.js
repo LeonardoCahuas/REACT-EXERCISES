@@ -1,10 +1,10 @@
+import React from 'react';
 import './App.css';
+import Sum from './sum';
 
 function App() {
   return (
-    <h1>
-      Hello, World!
-    </h1>
+    <Sum a={1} b={6}/>
   );
 }
 
