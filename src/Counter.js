@@ -8,6 +8,7 @@ export class Counter extends React.Component{
        super(props);
        setInterval(()=>{
         this.setState({
+            //parameter must be an object because it becomes the new state
             count: this.state.count + 1
         })
        }, 1000)
