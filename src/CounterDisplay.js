@@ -10,4 +10,3 @@ export class DisplayCounter extends React.Component{
     }
 }
 
-<DisplayCounter count={this.state.count}/>
