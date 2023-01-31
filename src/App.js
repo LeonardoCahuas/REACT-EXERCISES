@@ -1,10 +1,15 @@
 import React from "react";
 import { Login } from "./Login";
 export class App extends React.Component{
+    state={
+        onLogin: ()=>{
+            
+        }
+    }
     render(){
         return(
             <div>
-              <Login/>
+              <Login onLogin={this.state.onLogin}/>
             </div>
         );
     }
