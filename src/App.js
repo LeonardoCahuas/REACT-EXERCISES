@@ -1,10 +1,10 @@
 import React from "react";
-import { Counter } from "./Counter";
+import { ClickCounter } from "./ClickCounter";
 export class App extends React.Component{
     render(){
         return(
             <div>
-              <Counter increment={5} initialValue={20} interval={0.5}/>
+              <ClickCounter/>
             </div>
         );
     }
