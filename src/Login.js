@@ -7,7 +7,7 @@ export class Login extends React.Component{
         return(
            <div>
             <form onSubmit={this.handleFormSubmit}>
-               <input name="username" defaultValue={"jon"} type="text"/>
+               <input name="username" defaultValue={"jon"} type="text" autoFocus/>
                <input name="password" type="password"/>
                <input name="remember" type="checkbox" checked={this.remember}/>
                <button type="button" name="loginButton" disabled={true}>Login</button>
