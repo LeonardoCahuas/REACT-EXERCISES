@@ -23,7 +23,12 @@ export class ToDoList extends React.Component {
       newItem: newValue
     });
   };
-
+  reset = ()=>{
+    this.setState({
+        items: [],
+        newValue: ""
+    })
+  }
   render() {
     const items = this.state.items.map((item) => <li>{item}</li>);
 
@@ -32,6 +37,7 @@ export class ToDoList extends React.Component {
         <ul>{items}</ul>
         <input type="text" onChange={this.newToDo} value={this.state.newItem} />
         <button type="submit" onClick={this.addToDo}>Add ToDo</button>
+        <button type="reset" onClick={this.reset}>reset</button>
       </div>
     );
   }
