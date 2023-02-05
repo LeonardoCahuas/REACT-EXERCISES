@@ -29,8 +29,20 @@ export class ToDoList extends React.Component {
         newValue: ""
     })
   }
+  remove = (index)=>{
+    const newList = this.state.items;
+    newList.splice(index, 1);
+    this.setState({
+        items: newList,
+        newValue: this.state.newValue
+    })
+  }
   render() {
-    const items = this.state.items.map((item) => <li>{item}</li>);
+    const items = this.state.items.map((item, index) => 
+    <li  key={index}>
+        {item}
+        <button type="reset" onClick={()=> this.remove(index)}>Remove</button>
+    </li>);
 
     return (
       <div>
