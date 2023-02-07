@@ -1,6 +1,7 @@
-import React from "react";
-import { Cointainer } from "./Container";
+import React from 'react'
+import { ToDoList } from "./ToDoList";
 import './index.css'
+import ToDoList from './ToDoList';
 export class App extends React.Component{
     
     render(){
