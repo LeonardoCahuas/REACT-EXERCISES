@@ -5,7 +5,7 @@ export class Cointainer extends React.Component{
     render(){
         return(
             <div className="bg-white border border-red-600">
-            {this.props.children}
+            {this.props.title}
         </div>
         )
     }

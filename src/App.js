@@ -5,8 +5,8 @@ export class App extends React.Component{
     
     render(){
         return(
-            <Cointainer>
-                <h1>Welcome!</h1>
+            <Cointainer title={<h1>Welcome!</h1>}>
+                
             </Cointainer>
         ); 
     }
