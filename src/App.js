@@ -1,14 +1,20 @@
 import React from 'react'
 import { ToDoList } from "./ToDoList";
 import './index.css'
-import ToDoList from './ToDoList';
+
 export class App extends React.Component{
     
     render(){
         return(
-            <Cointainer title={<h1>Welcome!</h1>}>
-                
-            </Cointainer>
+            <ToDoList render={ (items, callback) =>
+                items.map((item, index) =>{ 
+                return <li  key={index}>                
+                {item}
+                <button type="button" onClick={()=> callback(index)}>Remove</button>                    
+            </li>})
+            }>
+
+            </ToDoList>
         ); 
     }
 }
