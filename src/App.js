@@ -1,17 +1,14 @@
 import React from "react";
-import { Login } from "./Login";
+import { Cointainer } from "./Container";
+import './index.css'
 export class App extends React.Component{
-    state={
-        onLogin: ()=>{
-            
-        }
-    }
+    
     render(){
         return(
-            <div>
-              <Login onLogin={this.state.onLogin}/>
-            </div>
-        );
+            <Cointainer>
+                <h1>Welcome!</h1>
+            </Cointainer>
+        ); 
     }
 }
 export default App;
