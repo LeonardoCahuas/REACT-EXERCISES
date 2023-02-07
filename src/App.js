@@ -1,20 +1,12 @@
 import React from 'react'
-import { ToDoList } from "./ToDoList";
+import { Language } from "./Language";
 import './index.css'
 
 export class App extends React.Component{
     
     render(){
         return(
-            <ToDoList render={ (items, callback) =>
-                items.map((item, index) =>{ 
-                return <li  key={index}>                
-                {item}
-                <button type="button" onClick={()=> callback(index)}>Remove</button>                    
-            </li>})
-            }>
-
-            </ToDoList>
+            <Language/>
         ); 
     }
 }
