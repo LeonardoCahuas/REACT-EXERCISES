@@ -1,9 +1,9 @@
 import './index.css'
-export function Sum(props){   
+export function Sum({numbers = [1,7, 24]}){   
     return(
             <div>
                 <h1>The sum is:{
-                    props.numbers.reduce((sum, item)=> sum + item)
+                    numbers.reduce((sum, item)=> sum + item)
                 }</h1>
             </div>
         )
