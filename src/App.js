@@ -1,6 +1,6 @@
 import React from 'react'
 import './index.css'
-import Sum from './Sum';
+import Sum from './Counter';
  
 export class App extends React.Component{
     
