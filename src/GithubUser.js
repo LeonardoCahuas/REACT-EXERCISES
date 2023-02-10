@@ -4,12 +4,11 @@ export function GithubUser({username}){
     const [data, setData] = useState({name: "", location: ""})
     useEffect(()=>{
        fetch(`https://api.github.com/users/${username}`)
-          .then(user => {          
-            return user.json()
-        })
+          .then(user => user.json())
           .then(dati=>{
             const name = dati.name
             const location = dati.location
+            console.log(name. location)
             setData({
                 name: name,
                 location: location
@@ -20,6 +19,7 @@ export function GithubUser({username}){
         return(
             <h1>
               Utente: {data.name},  Location: {data.location}
+              
             </h1>
         );
 }   
