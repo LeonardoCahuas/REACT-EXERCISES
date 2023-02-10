@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export function UseCounter({initialValue}){
+export function useCounter({initialValue= 0}){
     const [counter, setCounter] = useState(initialValue)
 
     function increment(){
@@ -12,14 +12,12 @@ export function UseCounter({initialValue}){
     function reset(){
         setCounter(0)
     }
-    return(
-        
-        <div>
-            {counter}
-            <button type="button" onClick={increment}>increment</button>
-            <button type="button" onClick={decrement}>decrement</button>
-            <button type="button" onClick={reset}>reset</button>
-        </div>
-    )
+    return{
+        counter: counter,
+        onIncrement: increment,
+        onDecrement: decrement,
+        onReset: reset
+
+    }
 }
-export default UseCounter
+export default useCounter

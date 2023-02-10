@@ -1,14 +1,12 @@
 import React from 'react'
+import DisplayCounter from './DisplayCounter';
 
-import UseCounter from './UseCounter';
-
- 
 export class App extends React.Component{
     
     render(){
         return(
             <div>
-                <UseCounter initialValue={0}/>
+               <DisplayCounter initialValue={0}/>
             </div>
         ); 
     }
