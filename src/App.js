@@ -1,12 +1,12 @@
 import React from 'react'
-import DisplayCounter from './DisplayCounter';
+import DisplayForm from './DisplayForm';
 
 export class App extends React.Component{
     
     render(){
         return(
             <div>
-               <DisplayCounter initialValue={0}/>
+               <DisplayForm/>
             </div>
         ); 
     }
