@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { GithubUserList } from './GithubUserList';
+import UseCounter from './UseCounter';
 
  
 export class App extends React.Component{
@@ -8,7 +8,7 @@ export class App extends React.Component{
     render(){
         return(
             <div>
-                <GithubUserList/>
+                <UseCounter initialValue={0}/>
             </div>
         ); 
     }
