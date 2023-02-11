@@ -19,4 +19,3 @@ function useGitHubUser(user){
   }
    
 export default useGitHubUser
-
