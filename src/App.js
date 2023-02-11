@@ -1,12 +1,14 @@
 import React from 'react'
-import DisplayForm from './DisplayForm';
+
+
+import GitHubUser from './DisplayGithubUser';
 
 export class App extends React.Component{
     
     render(){
         return(
             <div>
-               <DisplayForm/>
+               <GitHubUser username="LeonardoCahuas"/>
             </div>
         ); 
     }
