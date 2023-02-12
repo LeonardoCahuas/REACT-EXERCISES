@@ -1,12 +1,17 @@
 import React from 'react'
-import DisplayCounter from './DisplayCounter';
+import FilteredList from './FilteredList';
 
 export class App extends React.Component{
     
     render(){
         return(
             <div>
-               <DisplayCounter initialValue={10}/>
+               <FilteredList li={[
+                   {name:"jhon", age: 30, id:6},
+                   {name: "lia", age: 17, id:3},
+                   {name: "tom", age: 15, id:9},
+                   {name: "sara", age: 47, id:1}
+                ]}/>
             </div>
         ); 
     }
