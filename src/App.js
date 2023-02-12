@@ -1,12 +1,12 @@
 import React from 'react'
-import DisplayLanguage from './DisplayLanguage';
+import DisplayCounter from './DisplayCounter';
 
 export class App extends React.Component{
     
     render(){
         return(
             <div>
-               <DisplayLanguage/>
+               <DisplayCounter initialValue={10}/>
             </div>
         ); 
     }
