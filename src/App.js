@@ -1,14 +1,12 @@
 import React from 'react'
-
-
-import GitHubUser from './DisplayGithubUser';
+import CarDetails from './CarModel';
 
 export class App extends React.Component{
     
     render(){
         return(
             <div>
-               <GitHubUser username="LeonardoCahuas"/>
+               <CarDetails/>
             </div>
         ); 
     }
