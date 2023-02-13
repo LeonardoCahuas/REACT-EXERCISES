@@ -1,4 +1,3 @@
-
 export function Welcome({name}){   
     return(
             <div>
