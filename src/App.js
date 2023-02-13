@@ -1,16 +1,13 @@
-
 import React from 'react'
-
-import DisplayCounter from './DisplayCounter';
-
+import { Routes, Route } from 'react-router-dom';
+import Welcome from './Welcome';
 export class App extends React.Component{
 
     render(){
         return(
-            <div>
-               
-               <DisplayCounter initialValue={10}/>
-            </div>
+            <Routes>
+               <Route path="/" element={<Welcome name="Leonardo"/>}/>
+            </Routes>
         ); 
     }}
 
