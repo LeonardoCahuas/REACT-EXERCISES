@@ -15,7 +15,7 @@ function useGitHubUser(username) {
   console.log(username);
   const { data, error } = useSWR(
     `https://api.github.com/users/${username}`,
-    username === null ? alert("username invalid") : fetchUser
+    fetchUser
   );
 
   return {
