@@ -1,7 +1,11 @@
 import useGitHubUser from "./useGithubUser";
 
 export function GitHubUser({ username }) {
-  const { data } = useGitHubUser(username);
+  const { data} = useGitHubUser(username);
+  if (!data) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div>
       <div>Username: {data.name}</div>

@@ -8,7 +8,7 @@ const fetchUser = (url) =>
     })
     .catch((error) => {
       console.error(error);
-      throw error; // lancia l'errore per farlo gestire da useSWR
+      throw error;
     });
 
 function useGitHubUser(username) {
