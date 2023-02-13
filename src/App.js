@@ -3,6 +3,7 @@ import ClickCounter from './Counter';
 import { Routes, Route, Link, } from 'react-router-dom';
 import Welcome from './Welcome';
 import GithubUser from './GithubUser';
+import { GithubUserList } from './GithubUsersList';
 
 export class App extends React.Component{
 
@@ -12,13 +13,16 @@ export class App extends React.Component{
                 <Routes>
                     <Route path="/" element={<Welcome name="Leonardo"/>}/>
                     <Route path="counter" element={<ClickCounter/>}/>
-                    <Route path=":username" element={<GithubUser/>}/> 
-                    <Route path="*" element={<h1>Not Found</h1>}/>             
+                    <Route path=":username" element={<GithubUser/>}/>                      
+                    <Route path="users" element={<GithubUserList/>}/>           
+                    <Route path="*" element={<h1>Not Found</h1>}/>
                 </Routes>
                 <ul>
                     <li><Link to="/">Welcome</Link></li>
                     <li><Link to="/counter">Counter</Link></li>
                     <li><Link to=":username">Username</Link></li>
+                    <li><Link to="users">Users</Link></li>
+
 
                 </ul>
             </div>
