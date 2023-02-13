@@ -24,6 +24,7 @@ export function GithubUserList(){
         
         <div>
             <Routes>
+                <Route index element={<p>Add a user and select it</p>}/>
                 <Route path="users/" element={<GithubUser/>}/>
             </Routes>
             <form onSubmit={showUserDetails}>
