@@ -1,4 +1,4 @@
-import useSWR from 'swr';
+import useSWR, { mutate } from 'swr';
 
 const fetchUser = (url) =>
   fetch(url)
@@ -17,10 +17,13 @@ function useGitHubUser(username) {
     `https://api.github.com/users/${username}`,
     fetchUser
   );
-
+  const refetch = ()=>{
+    mutate()
+  }
   return {
     data,
     error,
+    refetch: refetch
   };
 }
 
